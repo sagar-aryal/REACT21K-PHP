@@ -6,3 +6,5 @@ This is the repository for my course PHP which was organised by Helsinki Busines
 - Program: Full Stack Web Developer
 - Group: REACT21K
 - Year: 2021
+
+## Major Projects
