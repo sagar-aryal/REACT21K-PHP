@@ -56,7 +56,7 @@
 
             );
             
-            if(filter_var($day, FILTER_VALIDATE_INT, $option) === 0 || filter_var($day, FILTER_VALIDATE_INT, $option) && is_integer($day) ) {
+            if(filter_var($day, FILTER_VALIDATE_INT, $option) === 0 || filter_var($day, FILTER_VALIDATE_INT, $option) && is_int($day) ) {
                 return ('<p style = color:green;>True, valid input<p>');
                 } 
             else {
@@ -85,6 +85,14 @@
 
         function validate_widthdraw_amount($amount, $balance) {
             // TODO: Add solution code here
+
+            if(is_int($amount) && $amount >= 0 && is_int($balance) && $amount <= $balance) {
+                return ('<p style = color:green;>True, valid input<p>');
+            }
+            else {
+                return ('<p style = color:red;>False, invalid input</p>');
+            }
+
         }
 
         echo 'Able to withdraw 100 from an account of 1000 balance: ' . validate_widthdraw_amount(100, 1000); // true
