@@ -7,8 +7,22 @@
     <title>PHP content</title>
 </head>
 <body>
+
     
     <?php
+
+    /*
+
+    1.Function validate_username, takes 1 argument, validate that it is a non empty string, and doesn’t have more than 25 characters
+
+    2.Function validate_weekday, takes 1 argument, validate that it is an integer within the range of 0 - 6 (0 - Sunday, 1 - Monday, 2 - Tuesday, 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday). Return true if all conditions are met, false otherwise
+
+    3.Function validate_withdraw_amount, takes 2 arguments, validate that both are numerical amounts without decimal point, non negative, and the withdraw amount is less than or equal to the current bank balance amount. Return true if all conditions are met, false otherwise
+    
+    4.Function validate_school_email, takes 1 argument, validate that the input is indeed an email address, and ends with bc.fi. Return true if all conditions are met, false otherwise
+
+
+    */
 
         function validate_username($name) {
             if(!empty($name) && strlen($name)<= 25 && ctype_alpha($name)) {
@@ -34,7 +48,7 @@
         function validate_weekday($day) {
             // TODO: Add solution code here
             $option = array(
-                'option' => array(
+                'options' => array(
                     'min_range' => 0,
                     'max_range' => 6
 
