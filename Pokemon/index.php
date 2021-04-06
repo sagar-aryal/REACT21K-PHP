@@ -28,13 +28,16 @@ Allow a page parameter to your PHP application, display the corresponding group 
 
 $data = file_get_contents( 'data.json');
 $json = json_decode($data, true);
+
 /*
 echo '<pre>';
 print_r($json);
 echo '</pre>';
 */
+
 $count_array = count($json['results']);
 echo 'Count: '.$count_array;
+
 /*
 foreach($json['results'] as $results) {
     echo '<h4> Name: ' . $results['name'] . '</h4>';
@@ -42,11 +45,24 @@ foreach($json['results'] as $results) {
 }
 */
 
+// Spilitting into chunks.
+$chunk = (array_chunk($json['results'], 50, true));
+//print_r($chunk);
+
 echo '<pre>';
-print_r(array_chunk($json['results'], 3));
+print_r($chunk[2]);
 echo '</pre>';
 
-
+$page = $_GET['page'];
+//echo $page;
+if($page < count($chunk)) {
+    echo '<pre>';
+    print_r($chunk[$page]);
+    echo '</pre>';
+}
+else {
+    echo 'Invalid page number';
+};
 
 ?>
     
