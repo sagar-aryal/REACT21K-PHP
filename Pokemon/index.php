@@ -35,12 +35,16 @@ echo '</pre>';
 */
 $count_array = count($json['results']);
 echo 'Count: '.$count_array;
-
+/*
 foreach($json['results'] as $results) {
     echo '<h4> Name: ' . $results['name'] . '</h4>';
     echo '<p> URL: ' . $results['url'] . '</p>';
 }
+*/
 
+echo '<pre>';
+print_r(array_chunk($json['results'], 3));
+echo '</pre>';
 
 
 
