@@ -1,0 +1,56 @@
+body {
+  background-color: lightseagreen;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: rgb(89, 112, 243);
+  padding: 10px 16px;
+  text-align: center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+button {
+  border: 1px solid white;
+  background-color: rgb(228, 90, 21);
+  color: white;
+  width: 100px;
+  padding: 10px;
+}
+button:hover {
+  background: rgba(228, 90, 21, 0.5);
+}
+h2 {
+  text-align: center;
+}
+
+.pokemons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-details {
+  border: 1px solid red;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(109, 209, 27);
+  color: White;
+}
+.footer {
+  background-color: rgb(89, 112, 243);
+  padding: 20px;
+  text-align: center;
+}
