@@ -60,6 +60,6 @@ function fetchData(page) {
       console.log(value);
       document.querySelector(".pokemons").innerHTML = value;
     });
-  //scroll top when previous or next vutton is clicked.
+  //scroll top when previous or next button is clicked.
   window.scrollTo(0, 0);
 }
