@@ -1,0 +1,22 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": " beef roast",
+      "ingredients": "Chicken",
+      "type": "Meat"
+    },
+    {
+      "id": 2,
+      "name": "brown gravy mix",
+      "ingredients": "Baking Powder",
+      "type": "Baking"
+    },
+    {
+      "id": 3,
+      "name": "dried Italian salad dressing mix",
+      "ingredients": "Salads and Fruits",
+      "type": "Condiments"
+    }
+  ]
+}
