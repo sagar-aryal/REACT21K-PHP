@@ -1,4 +1,4 @@
-# REACT21K_PHP
+# REACT21K-PHP
 
 ## Description
 
@@ -7,4 +7,4 @@ This is the repository for my course PHP which was organised by Helsinki Busines
 - Group: REACT21K
 - Year: 2021
 
-## Major Projects
+
